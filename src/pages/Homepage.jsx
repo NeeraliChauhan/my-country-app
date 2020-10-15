@@ -131,7 +131,8 @@ export default class HomePage extends React.Component {
     return (
       <div className={"wrapper"}>
         <h1>Country App</h1>
-        <p>Use this site to get the country information!</p>
+        <p>Use this app to convert an amount in SEK to local currency of any country</p>
+        <p className={'sub-title'}>Conversions available for European countries only</p>
         <div className={"main-container"}>
           <div className="comment">
             <i class="fas fa-exclamation"></i>

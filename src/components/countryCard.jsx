@@ -12,7 +12,7 @@ export default class CountryCard extends React.Component {
   onKeywordChange = (e) => {
     const {country} = this.props;
     this.setState({
-      amount: (e.target.value * country.exchange_currency.SEK).toFixed(2)
+      amount: (e.target.value/country.exchange_currency.SEK).toFixed(2)
     });
   }
 
@@ -40,20 +40,20 @@ export default class CountryCard extends React.Component {
         </div>
         <div className={"card-wrapper"}>
           <div className={"country-currency"}>
-            <label>Exchange to SEK:</label>
+            <label>Exchange to {currency.code}</label>
             {country.exchange_currency ? (
               <div>
                 <input
                   onChange={(e) => this.onKeywordChange(e)}
                   type="number"
-                  placeholder="Enter amount"
+                  placeholder="Enter amount in SEK"
                   className="amount-input"
                 />
                 <input
                   className="amount-input"
                   disabled
                   value={this.state.amount}
-                  placeholder="Amount in SEK"
+                  placeholder={`Amount in ${currency.code}`}
                 />
               </div>
             ) : <div className={"red-tag"}>Not available</div>

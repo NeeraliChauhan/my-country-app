@@ -22,11 +22,9 @@ body {
   padding: 0 30px 0 60px;
 }
 
-.main-content {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-} 
+.main-container {
+  margin-top: 20px;
+}
 
 footer {
   color: #888888;
@@ -113,4 +111,9 @@ button {
 .comment-text {
   font-size: 12px;
   margin-left: 6px;
+}
+.sub-title {
+  font-size: 14px;
+  color: #ca1717;
+  margin: 0
 }
