@@ -16,7 +16,6 @@ export const getCurrency = async (code) => {
   return fetch(WEBURL + "country/currencies?code=" + code)
     .then((res) => res.json())
     .then((response) => {
-      console.log("++++++++++++++++++", response.result)
       return response.result;
     })
     .catch((error) => {

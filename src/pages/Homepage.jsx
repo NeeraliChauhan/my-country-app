@@ -63,9 +63,7 @@ export default class HomePage extends React.Component {
 
   onClickAdd = async () => {
     const { selectedCountriesList, selectedCountry } = this.state;
-    console.log('------',this.state.selectedCountry)
     let currency = await this.getConvertedCurrency(selectedCountry.currencies[0].code)
-    console.log('######################', currency)
     selectedCountry['exchange_currency'] = currency
     selectedCountriesList.unshift(selectedCountry);
     this.setState({
@@ -130,7 +128,6 @@ export default class HomePage extends React.Component {
 
   render() {
     const { isOpen } = this.state;
-    console.log(this.state)
     return (
       <div className={"wrapper"}>
         <h1>Country App</h1>
