@@ -1,5 +1,5 @@
 .card {      
-    width: 640px;
+    width: 70%;
     border: 1px solid #eeeeee;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -13,6 +13,7 @@
     margin-bottom: 10px;
 }
 .country-name {
+    width: 30%;
     font-weight: 600;
     font-size: 26px;
     color: #333333;

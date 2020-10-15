@@ -67,7 +67,7 @@ export default class HomePage extends React.Component {
     let currency = await this.getConvertedCurrency(selectedCountry.currencies[0].code)
     console.log('######################', currency)
     selectedCountry['exchange_currency'] = currency
-    selectedCountriesList.push(selectedCountry);
+    selectedCountriesList.unshift(selectedCountry);
     this.setState({
       selectedCountriesList,
       selectedCountry: null,
@@ -135,17 +135,18 @@ export default class HomePage extends React.Component {
       <div className={"wrapper"}>
         <h1>Country App</h1>
         <p>Use this site to get the country information!</p>
-        <div className={"main-container"}>        
-         <p className={"warning"}>Please enter at-least 3 characters!</p>
+        <div className={"main-container"}>
+          <div className="comment">
+            <i class="fas fa-exclamation"></i>
+            <p className="comment-text">Please enter at-least 3 characters!</p>
+          </div>
           <input
             className={"search-bar"}
             onChange={this.onKeywordChange}
             placeholder="Country"
             value={this.state.keyword}
           />
-          {
-            isOpen ? this.renderSuggestions() :null
-          }
+          {isOpen ? this.renderSuggestions() : null}
           <button
             disabled={this.state.selectedCountry ? false : true}
             onClick={() => this.onClickAdd()}

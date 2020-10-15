@@ -22,8 +22,8 @@ export default class CountryCard extends React.Component {
     return (
       <div className="card">
         <div className={"card-wrapper"}>
-          <div>
-            <p className={"country-name"}>{country.name}</p>
+          <div className={"country-name"}>
+            <p>{country.name}</p>
           </div>
           <div className={" country-population"}>
             <i class="fas fa-users"></i>
