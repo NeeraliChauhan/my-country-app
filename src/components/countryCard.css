@@ -1,0 +1,73 @@
+.card {      
+    width: 640px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.country-name {
+    font-weight: 600;
+    font-size: 26px;
+    color: #333333;
+    margin:0;
+}
+.country-population {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.country-tag {
+    background-color: #187b11;
+    color: #ffffff;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.country-currency {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+label {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.population-label {
+  margin-left: 6px;
+}
+
+.card-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.amount-input {
+  margin-left: 10px;
+}
+
+.red-tag {
+  background-color: #ffaaaa;
+  padding: 3px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
