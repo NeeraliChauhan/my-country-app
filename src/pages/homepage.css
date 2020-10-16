@@ -113,7 +113,10 @@ button {
   margin-left: 6px;
 }
 .sub-title {
-  font-size: 14px;
-  color: #ca1717;
-  margin: 0
+  background-color: #878787;
+  padding: 10px;
+  width: fit-content;
+  color: white;
+  margin: 0;
+  font-size: 12px;
 }
